@@ -1,0 +1,14 @@
+.listings__item { 
+	display:flex;
+	justify-content:space-between;
+	padding-bottom:$baseline;
+	margin-bottom:$baseline;
+	border-bottom:1px solid $grey--light;
+}
+.listings__item-image {
+	width:20%;
+}
+.listings__item-info {
+	width:75%;
+	text-align:left;
+}

@@ -1,0 +1,20 @@
+.content-body__round-up-item {
+	border-bottom:1px solid $grey--med;
+}
+
+.content-body__round-up-item-summary {
+	background-color:$grey--1;
+	ul {
+		margin-right:10px;
+		padding:$baseline;
+	}
+	ul li {
+		display:flex;
+	}
+	ul li div {
+		align-items:center;
+	}
+	span {
+		margin-right:10px;
+	}
+}

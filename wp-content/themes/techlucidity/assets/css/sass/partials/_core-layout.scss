@@ -1,0 +1,22 @@
+.content-body__container {
+    background-color:$grey--1;
+    padding:$baseline;
+}
+.content-body__contents, .content-review__top-summary {
+    border-bottom:1px solid $grey--med;
+    border-top:1px solid $grey--med;
+    padding:$baseline 0;
+}
+
+.vertical-sep {
+	@extend .flex-vert;
+	position:relative;
+}
+.vertical-sep__inner {
+    border-left: 1px solid $grey--med;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;	
+}

@@ -1,0 +1,2 @@
+sass --watch /Users/willking/localhost/techlucidity/wp-content/themes/techlucidity/assets/css/sass:/Users/willking/localhost/techlucidity/wp-content/themes/techlucidity/ --style compressed  --sourcemap=none
+

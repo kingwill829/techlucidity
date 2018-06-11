@@ -1,0 +1,90 @@
+#masthead {
+    background-color:$blue--1;
+    margin-bottom: $baseline;
+    padding:$baseline / 2;
+}
+
+.mobile-masthead {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.masthead__logo, .mobile-masthead__logo {
+    font-family:$heading;
+    font-weight: 300;    
+}
+.masthead__nav {
+    display:none;
+    ul {
+        margin: 16px 0px 0px 0px;
+    }
+    ul li a {
+        color:$grey--1;
+        font-family:$heading;
+        font-weight: 300;
+    }
+}
+.masthead__nav ul li a:hover {
+    color:$blue--3;
+}
+/* Mobile nav icon */
+.mobile-masthead__nav-icon {
+    position:absolute;
+    left:0;
+
+    display: inline-block;
+    cursor: pointer;
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color:$blue--3;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+}
+
+/* Rotate first bar */
+.mobile-masthead__nav-icon--active .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.mobile-masthead__nav-icon--active .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.mobile-masthead__nav-icon--active .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+/* Desktop Styles */
+@media screen and (min-width:$tablet--max) {
+ .masthead__nav {
+    display:block;
+ }
+.desktop-masthead {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .masthead__logo {
+        width:10%;
+    }
+    }
+.masthead__nav ul {
+    margin:0px;
+    li {
+    display:inline;
+    margin-left:20px;
+}}
+
+}
